@@ -37,38 +37,43 @@
 						<div class="inner">
 							<h1 class="major">Pulsar timing arrays and NANOGrav</h1>
 							
-							<span class="image left"><img src="images/NANOGravHDData.png" alt="" height="250"/></span>
-							<p> Pulsar timing arrays use pulsars as galactic-scale detectors to observe nanoHertz gravitational waves.
-								The target source for pulsar timing arrays is a stochastic background emitted by an ensemble of supermassive black hole binaries 
-								at the center of galaxies or early universe processes. Gravitational waves impart a spatially correlated offset on the arrival times of pulses,
-								described by the Hellings and Downs curve. Using an array of dozens of pulsars and decade-long datasets,
-								those correlations were recently observed. Our team works within the NANOGrav collaboration to
-								analyze and interpret observational data as well as construct new data analysis methods and algorithms. </p>
+							<span class="image left"><img src="images/NANOGravHDData.png" alt="" height="300"/></span>
+							<p> Pulsars are rapidly spinning neutron stars that emit regular radio pulses, like cosmic lighthouses. 
+								Among their countless scientific applications, we can use them as clocks scattered throughout our galaxy 
+								to detect very low-frequency gravitational waves - specifically waves that oscillate once every few years 
+								(nanoHertz frequencies). The main target is a "background hum" of gravitational waves created by pairs of 
+								supermassive black holes orbiting each other at the centers of distant galaxies. When these gravitational waves 
+								pass through our galaxy, they cause the radio pulses to arrive at Earth slightly earlier or later than expected. 
+								These timing changes follow a specific pattern across different pulsars in the sky, described by the "Hellings and Downs curve."
+								By monitoring dozens of pulsars for over a decade, with the NANOGrav collaboration we have now observed this predicted pattern of correlated timing 
+								changes - providing evidence of a gravitational-wave background in nanoHertz frequencies.</p>
 
-							<span class="image right"><img src="images/NANOGravReweighting.png" alt="" height="300"/></span>
+							<!-- <span class="image right"><img src="images/NANOGravReweighting.png" alt="" height="300"/></span>
 							<p>Analyzing decade-long data sets from dozens of pulsars is time- and resource-consuming. Caltech graduate student Sophie Hourihane led a study that proposed a faster
 								but still accurate alternative. Rather than analyzing the data with a computationally expensive model that explicitly includes 
 								spatial correlations, we instead employ an approximate model and then reweight the
 								posterior to the full, expensive model. Through extensive simulations, Hourihane validated the accuracy and computational gains of this approach.
 								The plot exemplifies the method and its robustness, now routinely used on real data.
+							</p> -->
+
+							<span class="image right"><img src="images/NANOGravPPC.png" alt="" height="300"/></span>
+							<p>Unlike LIGO that detects individual gravitational wave "chirps" when two black holes or neutron stars merger,
+								NANOGrav detects a background "hum" made up of thousands of these signals all mixed together.
+								Currently we can only measure two basic properties of this background: how strong it is (amplitude), and
+								how its strength changes with frequency (spectral slope). This makes it challenging to be exactly sure about what 
+								its origin is. With former Caltech postdoctoral scholar Pat Meyers, we developed a method to check whether our theoretical 
+								models are correct. Our approach uses current models to predict what the data should look like and then 
+								compare these predictions to what we actually observe. This method is called "posterior predictive checks." 
 							</p>
 
-							<span class="image left"><img src="images/NANOGravPPC.png" alt="" height="250"/></span>
-							<p>Unlike LIGO which observes individual compact binary mergers, NANOGrav observes a stochastic signal that is the combination of individual 
-								signals from numerous sources. Determining the source origin of this stochastic signal is challenging, 
-								since to date we can only measure its spectral shape, namely its amplitude and the slope of its spectrum. 
-								Led by Caltech postdoctoral scholar Pat Meyers, we proposed a method to 
-								assess whether our models for the signal spectrum and spatial correlations are robust.
-								Based on posterior predictive checks, our method compares the observed data to predicted data.
-							</p>
-
-							<span class="image right"><img src="images/NANOGravPPCReal.png" alt="" height="250"/></span>
-							<p> Having validated posterior predictive checks on simulated data, we turned to the real NANOGrav data in which a stochastic signal has been detected.
-								Meyers led a study as part of the NANOGrav collaboration using the most up-to-date dataset. 
-								We showed that our interpretation of the signal spectral shape 
-								(its amplitude and slope)  is robust, as there is no evidence in the data for a deviation from a simple power-law.
-								Moreover, we confirmed the presence of the crucial spatial correlations, the key signature of a gravitational-wave signal in pulsar timing 
-								array data.
+							<span class="image left"><img src="images/NANOGravPPCReal.png" alt="" height="250"/></span>
+							<p> After successfully testing our method method on simulated, computer-generated data, we applied it to the 
+								actual gravitational-wave signal that NANOGrav discovered in real pulsar observations.
+								Using NANOGrav's most recent and comprehensive dataset, Meyers and the collaboration reached two key conclusions.
+								First, the gravitational-wave background follows a simple "power-law" pattern - its strength decreases  
+								with frequency to some power. Second, the presence of spatial correlations - the specific pattern of timing changes 
+								across pulsars that proves this is actually gravitational waves, was confirmed. This validation gives us confidence 
+								that we are correctly interpreting the first detection of the gravitational-wave background, rather than mistaking it for something else.
 							</p>
 
 							</div>
