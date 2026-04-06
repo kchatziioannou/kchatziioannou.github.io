@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Katerina Chatziioannou</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Katerina Chatziioannou</a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="Aboutme.html" class="active">About Me</a></li>
+						<li><a href="Interests.html" class="active">Research Interests</a></li>
+						<li><a href="Group.html" class="active">Research Group</a></li>
+						<li><a href="Blog.html" class="active">Blog</a></li>
+						<li><a href="Teaching.html" class="active">Teaching</a></li>
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner" style="max-width: 54em;">
+							<h1 class="major" style="font-size: 2em;">A usage guide for AI in a (my) research group</h1>
+							<p><em>April 6, 2026</em></p>
+
+							<p>Despite rapidly diverging opinions among academics regarding the role of AI in research, the efficiency of AI tools is tipping the scales in favor of adoption. This rapid shift brings along concerns about their impact on the profession and usage practices. I recently put together a general guide for the appropriate usage of AI tools within my group, with the core thesis being that (so far) <strong>the general principles of academic research provide sufficient guidance</strong>. This is an outline of those principles and how they apply to AI tools.</p>
+
+							<p>Before we begin, there are a few things to note. First, this is an attempt to provide general guidelines, not to define a "policy" in the sense of strict rules with consequences. Second, this is a snapshot of my thinking today, and might change in the future. Third, this is tailored towards my specific research: astrophysics and data analysis, compact binary modeling, and some signal processing and statistical inference theory. We (or at least I) are less involved in the construction of scientific software for general use.</p>
+
+
+							<p>Oh, and perhaps worth saying, no AI was used in bringing these ideas together.</p>
+
+							<h3>It is all about the goals</h3>
+
+							<p>While AI might prove disruptive and/or transformative, we have to start from the basics. The <strong>first principle</strong>, and first order of business in any situation, is <strong>to understand the goals</strong>. I am not referring to academia's incentive structure in modern Western society (that is a whole separate discussion), but instead the specific goals of any task, big or small, one undertakes that could conceivably benefit from AI.</p>
+
+							<p>Academia is in a unique (and privileged) position, as the <strong>end goal</strong> is not always the <strong>only goal</strong>. For example, the end goal of one of our projects might be to use data to measure the spins of black holes. Side goals of the same project might be: for me to learn about the latest spin models, the student leading the project to learn about inference, the postdoc co-mentoring the student to gain experience in collaborating on a project outside their direct area of expertise. There are also smaller tasks and their goals: make a plot, read papers, implement a published equation, implement a hierarchical model, resolve a code bug, resolve LaTeX compilation issues, etc.</p>
+
+							<p>There is no blanket rule for whether individual tasks can be outsourced to AI. The answer depends on who we are, what our training level is, what our interests are. If we have already achieved all side goals of performing some task (for example, we have already implemented N hierarchical models and we need the N+1), then there is no reason not to outsource the task. If this is our first model (or second, or third), then we are still learning and there exists a side goal that is distinct from the output. The side goals can be opaque and rarely articulated. For example, the main goal of reading a paper is to understand the content. A side goal is to learn about scientific writing. We need to learn to be more cognizant of our goals and priorities.
+							</p>
+
+							<p>Does this mean we might lose skills? Sure. But this is no different than the fact that, frankly, I can no longer do long division by hand. I learned how to do it in elementary school, but have since forgotten. People used to be able to compute logarithms, or calculate orbital trajectories. Have most of us lost that skill? Yes. Is it a problem? I do not think so.</p>
+
+							<h3>Responsibility</h3>
+
+							<p>Are we at risk of becoming sloppy and over-relying on unreliable partners? Also yes, and this is the <strong>second principle: we are responsible for our scientific output no matter how it was created</strong>. This is not a controversial or novel position. But the implication that this is a unique situation that has arisen due to AI is wrong. We have always been and will always be solely responsible, even under heavy usage of "helping hands," both digital and analog. When we do a high-dimensional limit with Mathematica, we are responsible if we misuse the Limit[] function and end up with a nested rather than a multivariate limit. When we add our name to a paper led by a colleague (whether an early-career scientist or not), we are responsible for ensuring validity of the logic and results. In graduate school I learned that I should "never say something or show a plot I do not understand." We need to apply the same rule to AI.</p>
+
+							<h3>Practice, practice, and then practice</h3>
+
+							<p>It is nearly impossible to get a checklist of "AI safe applications" that apply to all. So the <strong>third principle</strong> is that <strong>we need to practice</strong> and be ready to make mistakes, fail, learn the model limits, and above all learn our limits.</p>
+
+							<p>To be clear, there can be absolutely catastrophic mistakes. Do not share nonpublic data such as a colleague's research proposal, do not submit a research statement with hallucinations and fake citations. These are not mistakes, they are improper and unethical usage.</p>
+
+							<p>What I am referring to instead is using the evolving models and learning what the limits of their capabilities are, how to interact with them, how to check their work. One sobering example for me was watching Claude fumble some basic statistics I am an expert in. In that case, I could easily knock some sense into it. But what about topics I am not an expert in? What is the right ratio of risk to effort vetting every result, thus perhaps defeating the efficiency gains from using AI in the first place? The answer is personal and depends on your training level. My current rule is that I only share results where I used AI agents for tasks I knew the answer to, did not tell them what it should be, and then extensively vetted them. In private, I take higher risks but for now the answers remain in my ever-growing list of things to think about more.</p>
+
+							<p>Vetting AI results is a novel skill, but vetting results is not. When I was in high school, our teachers taught us that we should vet information from the then-new internet. The degree to which we succeeded in defending against internet misinformation is debatable but the point remains: there is a new required skill that teachers and students alike need to master. The sooner we get going, the better.</p>
+
+							<p>On a practical level, the situation evolves rapidly and as technical experts, we need to be familiar with existing tools. This is no different than knowing about SciPy functions that save us time, but also have specific use cases and assumptions. Do not hide behind the "it cannot do this" defense. It might be able to tomorrow. We (or at least I) do not understand the model progress well enough to dismiss it. Discuss it with your peers, mentors, advisors. Share examples both of success and of failure. Ask questions and exchange views on what appropriate usage is and where your limits lie. We already debate "AI philosophy" extensively. Let's add "AI practice" to the topics for discussion.</p>
+
+							<h3>Our voice over the "machines"</h3>
+
+							<p>The <strong>fourth and final principle</strong> is closer to a strict rule: <strong>our scientific text and presentations are our "voice" to the world and an integral part of research</strong>. 
+							The final paper draft is never the only goal. Instead, the intermediate steps are instrumental to research proper: we collect everything, exhaustively work through the logic, ensure there are no gaps in our logic or understanding, etc. This is evident for projects we lead. But it is also true when reading a draft from collaborators, where we go through every step and ensure that the logic and results are unimpeachable. Ultimately, working through the logic of a solution to a problem is what I define as <strong>doing research</strong>. I will keep this process for humans for as long as possible.</p>
+
+							<p>To be clear, scientific writing is not the same as scientific content. This principle does not preclude summarizing existing literature, fixing typos and grammar, or critiquing a draft in order to identify gaps and improve the content. But the ideas and content we put out into the world need to reflect our voice and our understanding.</p>
+
+							<p>So what if AI identifies a mistake or a gap in the logic? Should we ignore it? No, of course not. But if and when it does so and proposes a solution, it is not the end of the story. Instead, it is the beginning of a familiar process: rethinking the logic and where it went wrong, reading the relevant literature, figuring out how to close the gap, and implementing it. This is no different than when a colleague identifies a gap or mistake in our paper. A good rule of thumb is being able to argue (independently of AI) with a colleague about why the changes are needed. If we can, it is our own voice, our own conclusion, our own research. If not, there is work to do.</p>
+
+							<p>We are smart people, so can we fake it? Can we present half-understood ideas as our own and abuse the system? I am sure we can, especially when not confronted with a colleague who is a domain expert. But this is not qualitatively different than existing failure points in academic research (reinforced by academia's incentive structure, but that is again a story for another day). I have no control over what happens beyond my group and collaborators.</p>
+
+							<h3>Is it all under control then?</h3>
+							<p>Is there room for ideological opposition in adopting AI tools? I am still of two minds here. There is typically no such flexibility in technical work. We are not "allowed" to compute a likelihood by hand because we are opposed to computers. But there is room for technical arguments, such as not using a certain Python function because we do not understand it and are concerned about validity. AI also stands alone among technical tools: we hear on the news that it will "take away" our jobs, crash the economy, and accelerate climate collapse. So maybe there is some room. For now.</p>
+
+							<p>I would not go so far as to say that it is all under control. But at least for now, we can remain calm and rely on our existing principles. They have not failed yet, and that buys us time to adapt.</p>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Katerina Chatziioannou.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
