@@ -40,7 +40,7 @@
 								<p><span class="image left" style="max-width: 35%;"><img src="images/BinaryConfiguration.png" alt="" /></span>
 									LIGO and (eventually) LISA need highly accurate theoretical models to properly interpret the gravitational-wave 
 									signals they detect. General Relativity - Einstein's theory of gravity - provides the fundamental theoretical 
-									framework for calculating these signals and describes how the spacetime itself behaves during a merger. 
+									framework for calculating these signals and describes how spacetime itself behaves during a merger. 
 									The most accurate way to study these processes is through numerical relativity, which uses computer simulations 
 									to solve Einstein's complex field equations that analytical methods cannot handle. 
 									Our research focuses on understanding the intricate orbital dynamics that occur when two massive compact objects 
@@ -55,28 +55,55 @@
 									(limited only by numerical error) for how black holes interact and what gravitational waves they emit during mergers. 
 									However, setting up these simulations is challenging. Einstein's equations are incredibly complex - they are a system of ten 
 									coupled, non-linear partial differential equations that describe how matter and energy curve spacetime. Because of this complexity, 
-									it is not straightforward to choose the right starting conditions that will give you the specific binary black hole system you 
+									it is not straightforward to choose the right starting conditions that will result in the specific binary black hole system we 
 									want to study. Caltech graduate student Taylor Knapp led a research project that developed and tested an iterative method to 
-									solve this initial conditions problem. An iterative method means you make an educated guess, run a simulation to see how close 
-									you got to your target, then adjust your starting conditions and try again, repeating this process until you achieve the desired result.
+									solve this initial conditions problem. An iterative method means we make an educated guess, run a simulation to see how close 
+									we got to the target, then adjust the starting conditions and try again, repeating this process until we achieve the desired result.
 									This technique allows us to create simulations with specific target parameters for the binary system. For example, we can now reliably 
-									produce simulations where the black holes have a particular orbital eccentricity, a specific semi-major axis, or black holes spinning 
+									produce simulations where the black holes have a particular orbital eccentricity, a specific semi-major axis, or spins
 									in precisely chosen directions. This level of control is crucial for building comprehensive models of gravitational-wave sources.
 								</p>
 
-									<span class="image right" style="max-width: 45%;"><img src="images/RemnantNN.png" alt="" /></span>
+								<span class="image left" style="max-width: 25%;"><img src="images/SpECAccuracy.png" alt="" /></span>
+								<p>Thanks to almost two decades of producing numerical relativity simulations, we now have access to catalogs with thousands of high-quality simulations of merging black holes with a wide variety of parameters. 
+								In a follow-up study, Knapp led an effort to characterize the numerical errors of these simulations and to explore trends within a simulation or across the parameter space. 
+								Some findings were reassuring, others pointed to areas of improvement. 
+								As expected, numerical errors are larger for longer simulations: the more binary evolution the code needs to solve for, the more small errors add up. 
+								But reassuringly, the final merger stage is not inherently less accurate than the inspiral, despite the former being governed by more complex and non-linear dynamics. 
+								Numerical errors also do not grow with the eccentricity of the orbit or with black hole spins aligned with the orbit. 
+								However, errors do grow noticeably for precessing spins, and our study identified the precise numerical setup choice responsible, motivating a revisit. 
+								Furthermore, errors appear random across the parameter space rather than being systematically biased in any direction, e.g., the amplitude is not systematically overestimated with larger mass asymmetry. 
+								Theoretical models that are calibrated against these simulations are not in danger of folding in such a systematic and hard-to-diagnose error.
+								Overall, modern numerical simulations of black hole mergers are highly accurate, especially compared to current observational requirements.
+								</p>
+
+									<!--
+									<span class="image right" style="max-width: 40%;"><img src="images/RemnantNN.png" alt="" /></span>
 									<p>
-									Theoretical models must not only be accurate, but also fast to evaluate. Caltech postdoctoral scholar Lucy Thomas is exploring methods based 
+									Theoretical models must not only be accurate, but also fast to evaluate. Caltech postdoctoral scholar Lucy Thomas is exploring methods based
 									on neural networks to speed up our models. As a first application, we studied models for the outcome of a black hole merger.
-									When two black holes merge, they form a single, remnant black hole that receives a "kick" that sends it moving through space at large velocities. 
-									Predicting the properties of this final remnant black hole - specifically its mass, spin, and kick velocity - is crucial for understanding merger 
-									events and analyzing gravitational-wave data. Our model can predict these remnant properties from the initial binary parameters - 
-									the masses and spins of the two merging black holes. Our neural network surrogate builds upon an existing surrogate model trained 
-									on a large database of numerical relativity simulations. Our approach achieves comparable accuracy to the original model but runs approximately ten 
-									times faster. Such speed improvements are essential for practical gravitational-wave data analysis, where thousands or millions of model evaluations 
-									might be needed for a single detection. The project's key innovation was a comprehensive exploration of the neural network design space to optimize 
-									performance. We systematically studied hyperparameters (like learning rates and regularization strength), tested different network architectures 
-									(varying the number of layers and neurons), and investigated how the amount of training data affected model accuracy. 
+									When two black holes merge, they form a single remnant black hole that receives a "kick," sending it moving through space at large velocities.
+									Predicting the properties of this final remnant black hole - specifically its mass, spin, and kick velocity - is crucial for understanding merger
+									events and analyzing gravitational-wave data. Our model can predict these remnant properties from the initial binary parameters -
+									the masses and spins of the two merging black holes. Our neural network surrogate builds upon an existing surrogate model trained
+									on a large database of numerical relativity simulations. Our approach achieves comparable accuracy to the original model but runs approximately ten
+									times faster. Such speed improvements are essential for practical gravitational-wave data analysis, where thousands or millions of model evaluations
+									might be needed for a single detection. The project's key innovation was a comprehensive exploration of the neural network design space to optimize
+									performance. We systematically studied hyperparameters (like learning rates and regularization strength), tested different network architectures
+									(varying the number of layers and neurons), and investigated how the amount of training data affected model accuracy.
+									</p>
+									-->
+
+									<span class="image right" style="max-width: 45%;"><img src="images/Twist.png" alt="" /></span>
+									<p>The final frontier in modeling the signal emitted by black hole mergers is the most complex one: black holes in eccentric orbits and with precessing spins. 
+									Each effect on its own has been tackled before, but their combination raises unique challenges. 
+									On the road to the full eccentric and precessing model, Caltech postdoctoral scholar Lucy Thomas led a study revisiting one of the key ingredients of precessing models.
+									When black holes precess, the direction of strongest gravitational-wave emission slowly tilts, producing a complicated signal at Earth as we observe the binary from different angles. 
+									A useful trick to simplify this signal for modeling purposes is the "coprecessing frame": rather than describe the signal in a fixed reference frame, we use a time-dependent rotation to track the dominant emission direction. 
+									In this rotating frame the intricate precessing modulations largely disappear, and the underlying wave structure is simplified. 
+									We found that the coprecessing frame continues to simplify the signal even when the binary orbit is eccentric.
+									For example, when building fast waveform models based on numerical simulations, it requires fewer such simulations to reach the same accuracy compared to a fixed frame. 
+									The study confirms that this coprecessing, rotating trick remains a valuable starting point for future waveform models.
 									</p>
 							</div>
 					</section>
