@@ -64,15 +64,27 @@
 							<span class="image left" style="max-width: 40%;"><img src="images/WDMI.png" alt="" /></span>
 							<p>A second unique challenge we will face in LISA data is that during the year-long observation the noise in the detector varies. 
 							The problem is compounded by the fact that part of LISA's noise will not be instrumental, but astrophysical: millions of galactic white-dwarf binaries will create a "confusion" noise. 
-							The confusion will be higher when the satellite is "facing" the galactic center ,where most sources reside, and lower when it faces away.
+							The confusion will be higher when the satellite is "facing" the galactic center, where most sources reside, and lower when it faces away.
 							The changing noise invalidates a core assumption that underlies LIGO's analyses: stationarity, i.e., noise whose properties remain constant over time. 
 							Stationarity makes the Fourier domain computationally efficient and thus the natural choice for LIGO.
 							But LISA will not share that property and will therefore have to abandon the frequency domain.
 							An appealing option is the hybrid time-frequency domain: rather than treating the entire data as one long stream in time or frequency alone, we slice the data into windows and track how the frequency content changes over time.
-							With Johnson we set out to explore such time-frequency methods in depth as they are not widespread among gravitational-wave scientists. 
+							With Johnson and graduate student Jake Summers we set out to explore such time-frequency methods in depth as they are not widespread among gravitational-wave scientists. 
 							In the first part of a planned series of studies, we explained the origin and mathematical underpinnings of such methods and carefully derived all relevant expressions for a particular type of time-frequency transform, the Wilson-Daubechies-Meyer transform. 
 							This transform works well for gravitational-wave signals as it can localize their chirps in both frequency and time.
 							Our work aims to bridge the mathematical literature with practical gravitational-wave applications, offering the rigor required for such a fundamental shift in the data analysis framework.
+							</p>
+
+							<span class="image right" style="max-width: 60%;"><img src="images/WDMII.png" alt="" /></span>
+							<p>In the second part of the series, together with Johnson and Robert Rosati, we focused on the noise itself.
+							To describe noise whose properties change over time, we turned to the "evolutionary power spectra" introduced by Maurice Priestley in the 1960s, which promote the standard noise power spectrum to a function of both frequency and time.
+							As long as the noise changes slowly compared to the length of the time windows we slice the data into, the evolutionary spectrum has a simple physical interpretation: how much noise power there is at each frequency at each moment in time.
+							In that case, the evolutionary spectrum can also be estimated from the data themselves without additional information about the noise.
+							We derived how the noise in different time-frequency pixels of the Wilson-Daubechies-Meyer transform is correlated.
+							The figure shows these correlations for three examples: stationary noise (left), LISA noise from the Galactic foreground (middle), and noise whose spectrum steadily drifts over time (right).
+							If each pixel were independent, only the diagonal would be colored, so the fainter off-diagonal entries show correlations between neighboring pixels.
+							Using simulated LISA data, we showed that pretending the noise is stationary leads to signal loss and biased measurements of source properties.
+							We also found that ignoring the correlations between time-frequency pixels altogether works well for a single Galactic binary, whose signal occupies a narrow range of frequencies, but is insufficient for analyses that span a broad frequency range.
 							</p>
 
 							</div>
